@@ -1,8 +1,13 @@
  /* Sample implementation of wc utility. */
-     
+
+/** @file wc.c
+ *  @brief A program for a quiz
+ *  @warning This might go badly
+ */
      #include <stdlib.h>
      #include <stdio.h>
      #include <stdarg.h>
+	#include <ctype.h>
      
      typedef unsigned long count_t;  /* Counter type */
      
@@ -63,7 +68,7 @@
      static int
      isword (unsigned char c)
      {
-       return isalpha (c);
+       return isalpha(c);
      }
      
      /* Increase character and, if necessary, line counters */
